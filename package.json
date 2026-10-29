@@ -1,0 +1,20 @@
+{
+  "name": "findyourjob",
+  "version": "1.0.0",
+  "description": "A small project for find your job. It parse some platforms where you can find job and provides jobs based on your preferences.",
+  "homepage": "https://github.com/gostik01-14/FindYourJob-FYJ-#readme",
+  "bugs": {
+    "url": "https://github.com/gostik01-14/FindYourJob-FYJ-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gostik01-14/FindYourJob-FYJ-.git"
+  },
+  "license": "ISC",
+  "author": "Gostik01-14",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  }
+}
