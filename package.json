@@ -1,20 +1,29 @@
 {
   "name": "findyourjob",
   "version": "1.0.0",
-  "description": "A small project for find your job. It parse some platforms where you can find job and provides jobs based on your preferences.",
-  "homepage": "https://github.com/gostik01-14/FindYourJob-FYJ-#readme",
-  "bugs": {
-    "url": "https://github.com/gostik01-14/FindYourJob-FYJ-/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gostik01-14/FindYourJob-FYJ-.git"
-  },
-  "license": "ISC",
-  "author": "Gostik01-14",
+  "private": true,
+  "description": "Поиск вакансий hh.ru с личным аккаунтом",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "test": "start"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "test:browser": "node test/browser.cjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.14",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.3",
+    "undici": "^7.16.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
   }
 }
